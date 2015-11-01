@@ -77,16 +77,6 @@ ADD ./elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
 
 
 ### configure Logstash
-
-# cert/key
-#RUN mkdir -p /etc/pki/tls/certs && mkdir /etc/pki/tls/private
-#ADD ./logstash-forwarder.crt /etc/pki/tls/certs/logstash-forwarder.crt
-#ADD ./logstash-forwarder.key /etc/pki/tls/private/logstash-forwarder.key
-
-# filters
-#ADD ./01-lumberjack-input.conf /etc/logstash/conf.d/01-lumberjack-input.conf
-#ADD ./10-syslog.conf /etc/logstash/conf.d/10-syslog.conf
-#ADD ./11-nginx.conf /etc/logstash/conf.d/11-nginx.conf
 ADD ./logstash.conf /etc/logstash/conf.d/logstash.conf
 
 # patterns
