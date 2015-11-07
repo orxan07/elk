@@ -81,7 +81,7 @@ ADD ./logstash.conf /etc/logstash/conf.d/logstash.conf
 
 # patterns
 #ADD ./nginx.pattern ${LOGSTASH_HOME}/patterns/nginx
-RUN chown -R logstash:logstash ${LOGSTASH_HOME}/patterns
+#RUN chown -R logstash:logstash ${LOGSTASH_HOME}/patterns
 
 
 ###############################################################################
