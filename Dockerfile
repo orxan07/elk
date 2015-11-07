@@ -80,7 +80,7 @@ ADD ./elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
 ADD ./logstash.conf /etc/logstash/conf.d/logstash.conf
 
 # patterns
-ADD ./nginx.pattern ${LOGSTASH_HOME}/patterns/nginx
+#ADD ./nginx.pattern ${LOGSTASH_HOME}/patterns/nginx
 RUN chown -R logstash:logstash ${LOGSTASH_HOME}/patterns
 
 
